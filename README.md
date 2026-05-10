@@ -2,17 +2,89 @@
  
 <img width="1934" height="1125" alt="image" src="https://github.com/user-attachments/assets/633ecfe2-f839-4f0a-ba39-76ee4978c7ee" />
 
-Multi-Agent Context Model Protocol, an advanced architectural framework designed to handle user requests through a sequence of specialized AI or logic-based "Agents."
-1. Front-End Interface & Control
-The system accepts input from Desktop, Web, and Mobile platforms. These converge at a central Controller that enforces HTTP/HTTPS protocols, acting as the first line of standard communication security.
-2. The Gateway & Security Layer
-The API Gateway routes traffic to the System Security Agent. This agent likely performs real-time threat analysis and identity verification before the request penetrates the core logic layers.
-3. Intelligence & Orchestration
-This is the "agentic" heart of the system, using a chain of responsibility:
-Data Sentinel Agents (1 & 2): These ensure data integrity and governance. They likely check for compliance, sensitive data leaks, or input sanitization.
-Query Orchestrator Agent: Translates high-level user intent into specific database queries.
-Request Orchestrator Model: Manages the execution flow, ensuring the various databases are accessed in the correct sequence.
-4. Data Persistence & Rendering
-Layered Storage: The system separates concerns between Transaction DB (live data), Journal Logs (auditing/history), APIs and Users Account (identity), and System DB (configuration).
-Response Rendering Model: Before the data returns to the user, this model formats the raw output into a context-aware response tailored for the specific device (e.g., a simplified mobile view vs. a detailed desktop view).
-Key Takeaway: This architecture moves away from rigid, hard-coded logic toward a dynamic, agent-led flow, allowing for more flexible, secure, and contextually aware application behavior.
+ The **Multi-Agent Context Model Protocol** is an advanced architectural framework designed to handle user requests through a sequence of specialized AI and logic-based agents. It enables secure, modular, and context-aware processing from input to final response rendering.
+
+---
+
+## 1. Front-End Interface & Control
+
+The system accepts user input from multiple platforms:
+
+- Desktop
+- Web
+- Mobile
+
+All requests converge at a central **Controller**, which enforces **HTTP/HTTPS protocols**. This layer serves as the first line of communication standardization and security enforcement.
+
+---
+
+## 2. Gateway & Security Layer
+
+Requests are routed through an **API Gateway**, which forwards them to the **System Security Agent**.
+
+### System Security Agent
+Responsible for:
+
+- Real-time threat detection
+- Identity verification
+- Request validation before entering core system layers
+
+This ensures only trusted and sanitized requests proceed further.
+
+---
+
+## 3. Intelligence & Orchestration Layer
+
+This is the core "agentic" system responsible for intelligent processing and workflow management.
+
+### Data Sentinel Agents (1 & 2)
+- Enforce data integrity and governance
+- Detect sensitive data exposure risks
+- Perform input sanitization and compliance checks
+
+### Query Orchestrator Agent
+- Interprets user intent
+- Converts high-level requests into structured database queries
+
+### Request Orchestrator Model
+- Controls execution flow
+- Ensures correct sequencing of database operations
+- Coordinates multi-source data retrieval
+
+---
+
+## 4. Data Persistence Layer
+
+The system maintains a clear separation of storage responsibilities:
+
+- **Transaction DB** → Live operational data
+- **Journal Logs** → Audit trails and historical records
+- **API & User Accounts DB** → Identity and authentication data
+- **System DB** → Configuration and system-level settings
+
+---
+
+## 5. Response Rendering Layer
+
+### Response Rendering Model
+Before delivering output to the user, this model:
+
+- Formats raw data into structured responses
+- Applies context-awareness based on device type
+- Optimizes presentation for:
+  - Mobile (simplified view)
+  - Desktop (detailed view)
+  - Web (balanced layout)
+
+---
+
+## Key Takeaway
+
+The Multi-Agent Context Model Protocol shifts system design from rigid, monolithic logic to a **dynamic agent-driven architecture**, enabling:
+
+- Higher scalability
+- Stronger security layers
+- Adaptive context-aware responses
+- Modular intelligence flow
+
+This structure supports modern AI-first applications where decision-making is distributed across specialized agents rather than centralized logic.
